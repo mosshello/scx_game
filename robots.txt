@@ -4,10 +4,8 @@ Allow: /
 User-agent: Baiduspider
 Allow: /
 
-User-agent: Bingbot
-Allow: /
+Sitemap: https://66gm.top/sitemap.xml
 
-User-agent: Googlebot
-Allow: /
-
-Sitemap: https://66gm.cc/sitemap.xml
+# 百度搜索资源平台验证
+User-agent: Baiduspider
+Crawl-delay: 1
