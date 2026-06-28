@@ -6,7 +6,6 @@ let tagsData = [];
 let currentCategory = 'all';
 let currentTag = 'all';
 let searchQuery = '';
-const FEATURED_COUNT = 12;
 
 // User-provided game covers for strip
 const USER_COVERS = [
@@ -148,7 +147,6 @@ function renderFeaturedGames() {
   if (currentCategory === 'all' && currentTag === 'all' && !searchQuery) {
     filtered = filtered.filter(game => game.tags.includes('hot'));
   }
-  filtered = filtered.slice(0, FEATURED_COUNT);
 
   if (filtered.length === 0) {
     grid.innerHTML = renderNoResults();
@@ -317,12 +315,13 @@ function searchGames(query) {
 
 // ===== Update Count =====
 function updateGamesCount() {
+  const isAllHot = currentCategory === 'all' && currentTag === 'all' && !searchQuery;
   let count = filterGames().length;
-  if (currentCategory === 'all' && currentTag === 'all' && !searchQuery) {
+  if (isAllHot) {
     count = gamesData.filter(game => game.tags.includes('hot')).length;
   }
   const el = document.getElementById('gamesCount');
-  if (el) el.textContent = `店铺同步30+款 · 首页精选 ${Math.min(count, FEATURED_COUNT)} 款`;
+  if (el) el.textContent = isAllHot ? `店铺同步 ${count} 款 · 已全部展示` : `当前展示 ${count} 款`;
 }
 
 // ===== Go to Game =====
