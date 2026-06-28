@@ -781,6 +781,73 @@ body {
 .footer-copyright { color: var(--text-muted); font-size: 12px; }
 .footer-icp { color: var(--text-muted); font-size: 11px; }
 
+.footer-legal-links {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 14px;
+}
+
+.footer-legal-links a {
+  color: var(--text-muted);
+  font-size: 11px;
+  text-decoration: none;
+}
+
+.footer-legal-links a:hover { color: var(--neon-pink); }
+
+/* ===== Legal Page ===== */
+.legal-page {
+  min-height: calc(100vh - 120px);
+  padding: 112px 20px 64px;
+}
+
+.legal-card {
+  width: min(860px, 100%);
+  margin: 0 auto;
+  padding: 40px;
+  background: var(--bg-card);
+  border: 1px solid var(--border);
+  border-radius: var(--radius-lg);
+}
+
+.legal-header {
+  padding-bottom: 24px;
+  margin-bottom: 28px;
+  border-bottom: 1px solid var(--border);
+}
+
+.legal-header h1 {
+  margin-bottom: 8px;
+  font-size: clamp(28px, 5vw, 40px);
+  line-height: 1.2;
+}
+
+.legal-updated,
+.legal-intro,
+.legal-section p,
+.legal-section li {
+  color: var(--text-secondary);
+}
+
+.legal-updated { font-size: 13px; }
+.legal-intro { margin-bottom: 28px; line-height: 1.8; }
+.legal-section + .legal-section { margin-top: 26px; }
+.legal-section h2 { margin-bottom: 10px; font-size: 18px; }
+.legal-section p,
+.legal-section li { font-size: 14px; line-height: 1.9; }
+.legal-section ul { padding-left: 20px; }
+
+.legal-contact {
+  display: inline-flex;
+  margin-top: 10px;
+  color: var(--neon-pink);
+  font-weight: 700;
+  text-decoration: none;
+}
+
+.legal-contact:hover { color: #ff4b88; }
+
 /* ===== Toast ===== */
 .toast {
   position: fixed;
@@ -902,4 +969,9 @@ body {
   .section-more { display: inline-block; margin-top: 12px; }
   .games-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 12px; }
   .site-cta-button { width: 100%; text-align: center; }
+  .legal-page { padding: 88px 14px 40px; }
+  .legal-card { padding: 24px 20px; }
+  .legal-header { margin-bottom: 22px; }
+  .legal-intro { margin-bottom: 24px; }
+  .footer-legal-links { width: 100%; }
 }
