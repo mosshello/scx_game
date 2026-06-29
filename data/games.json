@@ -1,6 +1,6 @@
 {
   "version": "1.2",
-  "updated": "2026-06-28",
+  "updated": "2026-06-29",
   "categories": [
     {
       "id": "all",
@@ -126,23 +126,6 @@
       "description": "赌石刮刮乐，店铺同步免广告版本",
       "image": "https://qn.ldxp.cn/a5/d1ec934abf3676156830a66b37dd20.png",
       "link": "https://pay.ldxp.cn/item/mq74wg",
-      "hot": true,
-      "badge": "抖音爆款"
-    },
-    {
-      "id": "shop-dngf86",
-      "name": "疯狂买买买",
-      "access": "permanent",
-      "price": "1.88",
-      "category": "douyin",
-      "tags": [
-        "hot",
-        "no-ad",
-        "sim"
-      ],
-      "description": "疯狂买买买，店铺同步免广告版本",
-      "image": "https://qn.ldxp.cn/77/7c4940f9affd0a9d7df027e95d06eb.png",
-      "link": "https://pay.ldxp.cn/item/dngf86",
       "hot": true,
       "badge": "抖音爆款"
     },
@@ -937,6 +920,179 @@
       "link": "https://pay.ldxp.cn/item/1kb150",
       "hot": false,
       "badge": "APP"
+    },
+    {
+      "id": "shop-z9spae",
+      "name": "地核幸存者",
+      "access": "permanent",
+      "price": "3.88",
+      "category": "douyin",
+      "tags": [
+        "hot",
+        "no-ad",
+        "gm",
+        "casual"
+      ],
+      "description": "地核幸存者，店铺同步版本",
+      "image": "https://qn.ldxp.cn/2d/ebc8e9e5c1cb784b00857a09e4e740.png",
+      "link": "https://pay.ldxp.cn/item/z9spae",
+      "hot": true,
+      "badge": "抖音爆款"
+    },
+    {
+      "id": "shop-cmvu19",
+      "name": "我的模拟超市",
+      "access": "permanent",
+      "price": "3.88",
+      "category": "douyin",
+      "tags": [
+        "hot",
+        "no-ad",
+        "sim"
+      ],
+      "description": "我的模拟超市，店铺同步版本",
+      "image": "https://qn.ldxp.cn/9f/5cb95ccfe73785566a966f9b9cdb82.png",
+      "link": "https://pay.ldxp.cn/item/cmvu19",
+      "hot": true,
+      "badge": "抖音爆款"
+    },
+    {
+      "id": "shop-biyred",
+      "name": "我的修仙人生",
+      "access": "permanent",
+      "price": "2.88",
+      "category": "douyin",
+      "tags": [
+        "hot",
+        "no-ad",
+        "gm",
+        "casual"
+      ],
+      "description": "我的修仙人生，店铺同步版本",
+      "image": "https://qn.ldxp.cn/e2/914e03b6b1a0eddd4865aee9529a97.png",
+      "link": "https://pay.ldxp.cn/item/biyred",
+      "hot": true,
+      "badge": "抖音爆款"
+    },
+    {
+      "id": "shop-p9b1q3",
+      "name": "这关贼轻松",
+      "access": "permanent",
+      "price": "2.88",
+      "category": "douyin",
+      "tags": [
+        "hot",
+        "no-ad",
+        "gm",
+        "casual"
+      ],
+      "description": "这关贼轻松，店铺同步版本",
+      "image": "https://qn.ldxp.cn/70/f9c2776508375529c48175d4926091.png",
+      "link": "https://pay.ldxp.cn/item/p9b1q3",
+      "hot": true,
+      "badge": "抖音爆款"
+    },
+    {
+      "id": "shop-u025kw",
+      "name": "谁能打过我",
+      "access": "permanent",
+      "price": "2.88",
+      "category": "douyin",
+      "tags": [
+        "hot",
+        "no-ad",
+        "casual"
+      ],
+      "description": "谁能打过我，店铺同步版本",
+      "image": "https://qn.ldxp.cn/cf/d2e9ee5d72f3e805fbeddf7268b81e.png",
+      "link": "https://pay.ldxp.cn/item/u025kw",
+      "hot": true,
+      "badge": "抖音爆款"
+    },
+    {
+      "id": "shop-ezihi9",
+      "name": "这关我一定行",
+      "access": "permanent",
+      "price": "1.88",
+      "category": "douyin",
+      "tags": [
+        "hot",
+        "no-ad",
+        "casual"
+      ],
+      "description": "这关我一定行，店铺同步版本",
+      "image": "https://qn.ldxp.cn/72/46db27d6a918b5b45c1bf155e93f54.png",
+      "link": "https://pay.ldxp.cn/item/ezihi9",
+      "hot": true,
+      "badge": "抖音爆款"
+    },
+    {
+      "id": "shop-apw6d7",
+      "name": "自由末日生存",
+      "access": "permanent",
+      "price": "2.88",
+      "category": "douyin",
+      "tags": [
+        "hot",
+        "no-ad",
+        "casual"
+      ],
+      "description": "自由末日生存，店铺同步版本",
+      "image": "https://qn.ldxp.cn/6f/ff84210fa94745c4f9825170a123e6.png",
+      "link": "https://pay.ldxp.cn/item/apw6d7",
+      "hot": true,
+      "badge": "抖音爆款"
+    },
+    {
+      "id": "shop-1yoxvr",
+      "name": "咸鱼我看行",
+      "access": "permanent",
+      "price": "2.88",
+      "category": "douyin",
+      "tags": [
+        "hot",
+        "no-ad",
+        "casual"
+      ],
+      "description": "咸鱼我看行，店铺同步版本",
+      "image": "https://qn.ldxp.cn/7f/dbec393d979a9c4ce0c09bc77a5a7c.png",
+      "link": "https://pay.ldxp.cn/item/1yoxvr",
+      "hot": true,
+      "badge": "抖音爆款"
+    },
+    {
+      "id": "shop-w1rx7j",
+      "name": "这关了不起/越菜越上头",
+      "access": "permanent",
+      "price": "3.88",
+      "category": "app",
+      "tags": [
+        "no-ad",
+        "gm",
+        "casual"
+      ],
+      "description": "这关了不起/越菜越上头，店铺同步版本",
+      "image": "https://qn.ldxp.cn/19/6e3a9c1665bb3d68657516f1be34f5.png",
+      "link": "https://pay.ldxp.cn/item/w1rx7j",
+      "hot": false,
+      "badge": "APP"
+    },
+    {
+      "id": "shop-eh21c3",
+      "name": "你个小聪明",
+      "access": "free",
+      "price": "免费",
+      "category": "free",
+      "tags": [
+        "free",
+        "no-ad",
+        "relax"
+      ],
+      "description": "你个小聪明，店铺同步版本",
+      "image": "https://qn.ldxp.cn/1b/605e3ac4a0a1a60cee9f07703125ea.png",
+      "link": "https://pay.ldxp.cn/item/eh21c3",
+      "hot": false,
+      "badge": "免费"
     }
   ]
 }
