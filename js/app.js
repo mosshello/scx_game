@@ -13,19 +13,25 @@ const USER_COVERS = [
   'https://qn.ldxp.cn/77/7c4940f9affd0a9d7df027e95d06eb.png',
   'https://qn.ldxp.cn/99/3fba128bb48bc445a96364258e0732.png',
   'https://qn.ldxp.cn/c0/ff6b36536ef3900ed4232a99b5fd6a.png',
-  'https://qn.ldxp.cn/6e/54b5fc337917fd8b47c2a84d80a406.png',
   "https://qn.ldxp.cn/8b/cd7d74e5d5714e593cd7bb16e293e8.png"
 ];
    
-// 购买链接，与封面顺序一一对应
-const USER_PURCHASE_LINKS = [
-  'https://pay.ldxp.cn/item/mq74wg',
-  'https://pay.ldxp.cn/item/dngf86',
-  'https://pay.ldxp.cn/item/3cvvjy',
-  'https://pay.ldxp.cn/item/sesdv3',
-  'https://pay.ldxp.cn/item/cj6ezr',
-  "https://pay.ldxp.cn/item/rrmpb9"
+// 首批静态详情页，与封面顺序一一对应
+const USER_DETAIL_LINKS = [
+  'games/dushi-guaguale.html',
+  'games/fengkuang-maimaimai.html',
+  'games/jinhua-tafang.html',
+  'games/huoche-da-jiangshi.html',
+  'games/luoye-qingli-moniqi.html'
 ];
+
+const FEATURED_DETAIL_LINKS = {
+  'shop-mq74wg': USER_DETAIL_LINKS[0],
+  'shop-gl6qnl': USER_DETAIL_LINKS[1],
+  'shop-3cvvjy': USER_DETAIL_LINKS[2],
+  'shop-sesdv3': USER_DETAIL_LINKS[3],
+  'shop-rrmpb9': USER_DETAIL_LINKS[4]
+};
 
 // ===== Initialize =====
 document.addEventListener('DOMContentLoaded', () => {
@@ -185,9 +191,9 @@ function renderGameStrip() {
 
   track.innerHTML = items.map((cover, i) => {
     const itemIndex = i % covers.length;
-    const purchaseLink = USER_PURCHASE_LINKS[itemIndex];
+    const detailLink = USER_DETAIL_LINKS[itemIndex];
     return `
-      <a class="gamestrip-item" href="${purchaseLink}" target="_blank" rel="noopener noreferrer" title="点击购买游戏" aria-label="购买热门游戏 ${itemIndex + 1}">
+      <a class="gamestrip-item" href="${detailLink}" title="查看游戏详情" aria-label="查看热门游戏 ${itemIndex + 1} 详情">
         <img src="${cover}" alt="" loading="eager">
       </a>
     `;
@@ -227,6 +233,10 @@ function createGameCard(game, index) {
   const btnLabel = isFree ? '立即玩' : '解锁';
 
   const placeholder = generatePlaceholderSvg(game.name, index);
+  const detailLink = FEATURED_DETAIL_LINKS[game.id];
+  const titleContent = detailLink
+    ? `<a class="game-title-link" href="${detailLink}">${game.name}</a>`
+    : game.name;
 
   return `
     <div class="game-card" onclick="goToGame('${game.id}')" style="opacity:0">
@@ -236,7 +246,7 @@ function createGameCard(game, index) {
         <span class="game-access-tag ${accessClass}">${accessLabel}</span>
       </div>
       <div class="game-info">
-        <h3 class="game-title">${game.name}</h3>
+        <h3 class="game-title">${titleContent}</h3>
         <div class="game-tags">${gameTags}</div>
         <div class="game-footer">
           <span class="game-access-label ${accessClass}">${accessLabel}</span>
@@ -328,6 +338,11 @@ function updateGamesCount() {
 function goToGame(gameId) {
   const game = gamesData.find(g => g.id === gameId);
   if (!game) return;
+  const detailLink = FEATURED_DETAIL_LINKS[gameId];
+  if (detailLink) {
+    window.location.href = detailLink;
+    return;
+  }
   if (game.link && game.link.includes('pay.ldxp.cn')) {
     window.open(game.link, '_blank');
   }
